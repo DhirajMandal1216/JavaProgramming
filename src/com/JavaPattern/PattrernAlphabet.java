@@ -10,6 +10,8 @@ public class PattrernAlphabet {
         obj.starPattern(5);
         obj.numberPattern1(5);
         obj.numberPattern2(5);
+        obj.star1(5);
+        obj.star2(5);
 
     }
     char ch='A';
@@ -96,5 +98,24 @@ public class PattrernAlphabet {
             System.out.println();
         }
 
+    }
+
+    void star1(int n){
+        for (int row=5;row>1;row--){
+            for(int col=1;col<row-1+1;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+    void star2(int n){
+        for (int row=1;row<=n;row++){
+            for(int col=1;col<=n-row+1;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
